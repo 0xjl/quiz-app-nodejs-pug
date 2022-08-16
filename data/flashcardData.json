@@ -1,16 +1,16 @@
 {
     "data": {
-        "title": "JavaScript Flashcards",
+        "title": "Random Questions",
         "cards": [
             {
-                "question": "What language are Express apps written in?",
-                "hint": "It starts with a \"J\"",
-                "answer": "JavaScript"
+                "question": "Who is the current president of the United States",
+                "hint": "It starts with a \"B\"",
+                "answer": "Biden"
             },
             {
-                "question": "What is one way a website can store data in a user's browser?",
-                "hint": "They are delicious with milk",
-                "answer": "Cookies"
+                "question": "What is the circumference of the world?",
+                "hint": "in KMs",
+                "answer": "40,075KM"
             },
             {
                 "question": "What is a common way to shorten the response object's name inside middleware?",
