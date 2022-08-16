@@ -18,14 +18,9 @@
                 "answer": "res"
             },
             {
-                "question": "How many different values can booleans have?",
+                "question": "WHAT IS THE PURPOSE OF LIFE?",
                 "hint": "Think: binary",
                 "answer": "2"
-            },
-            {
-                "question": "Which HTML element can contain JavaScript?",
-                "hint": "It starts with an \"s\"",
-                "answer": "<script>"
             }
         ]
     }
