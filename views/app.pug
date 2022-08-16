@@ -4,11 +4,11 @@ block main
     section.namecard 
         .namecard-hello 
             if name 
-                p.namecard-greeting WELCOME, #{name}!
+                p.namecard-greeting <strong>Welcome, #{name}.</strong>
                 form.namecard-exit(action='/goodbye', method='POST')
                     button(type='submit')
-                        img(src="/static/img/close.svg", alt="exit image")
+                        img.close-button(src="/static/img/close.svg", alt="exit image")
             else
-                p.namecard-greeting Hello, student!
+                p.namecard-greeting <strong>Hello Student</strong>
         block intro 
     block card

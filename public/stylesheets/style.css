@@ -2,6 +2,7 @@
 
 body {
   position: relative;
+  font-family: 'Century Gothic', sans-serif;
 }
 
 header {
@@ -15,27 +16,6 @@ header {
 header img {
   width: 100%;
   max-width: 350px;
-}
-
-body {
-  background-color: #edead9;
-  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-}
-
-h1 {
-  margin: 0;
-}
-
-h2 {
-  font-weight: 400;
-}
-
-a {
-  text-decoration: none;
-}
-
-button {
-  outline: none;
 }
 
 input {
@@ -57,7 +37,7 @@ input {
   font-size: 1em;
   padding: 8px 10px;
   color: #d64226;
-  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  font-family: 'Century Gothic', sans-serif;
 }
 
 .button-primary-small:hover {
@@ -73,17 +53,15 @@ input {
 /* Log In */
 
 .namecard {
+  font-size: 1.5em;
   background-color: #f5f3ed;
-  max-width: 400px;
-  margin: auto;
+  margin-bottom: 5em;
   color: #727c85;
   text-align: center;
   border-radius: 20px;
 }
 
 .namecard-hello {
-  display: -ms-flex;
-  display: -webkit-flex;
   display: flex;
   align-items: center;
   border-bottom: solid 2px #edead9;
@@ -92,7 +70,7 @@ input {
 }
 
 .namecard-greeting {
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 400;
   width: 50%;
 }
@@ -108,6 +86,13 @@ input {
   padding-top: 45px;
 }
 
+.namecard-form,
+.namecard-prompt,
+.namecard-submit {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
 .namecard-name {
   display: block;
   margin: 20px auto;
@@ -120,19 +105,18 @@ input {
   font-size: 1em;
   padding: 8px 10px;
   color: #d64226;
-  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  font-family: 'Century Gothic', sans-serif;
   width: 100%;
   display: block;
   box-sizing: border-box;
+  text-decoration: none;
+  border-radius: 7.5px;
 }
 
 .namecard-submit:hover {
   background-color: #d64226;
   color: #fff;
   cursor: pointer;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -157,22 +141,21 @@ input {
 .card {
   position: relative;
   max-width: 400px;
-  min-height: 425px;
+  min-height: 500px;
   box-sizing: border-box;
-  margin: auto;
+  margin: 0 auto;
   padding-bottom: 30px;
   color: #727c85;
   text-align: center;
-  border-radius: 20px;
-  line-height: 1.5;
+  border-radius: 15px;
   border-bottom: 4px solid rgba(0, 0, 0, 0.1);
 }
 
 .card-header {
   background-color: #727c85;
   height: 100px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 
 .card-title {
@@ -198,25 +181,22 @@ input {
 }
 
 .card-question div:first-of-type {
-  background-image: url('../img/content-header-question.png');
+  background-image: url('../img/question.png');
   background-size: contain;
 }
 
-.card-answer {
-  background-color: #d64226;
-}
-
 .card-answer div:first-of-type {
-  background-image: url('../img/content-header-answer.png');
+  background-image: url('../img/answer.png');
   background-size: contain;
 }
 
 .card-answer #content {
-  color: #f5f3ed;
+  color: #727c85;
 }
 
 #content {
   padding: 8% 5%;
+  font-size: 1em;
 }
 
 #content button {
@@ -224,7 +204,7 @@ input {
   font-size: 0.8em;
   margin: auto;
   color: #c79735;
-  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  font-family: 'Century Gothic', sans-serif;
   background-color: #f5f3ed;
   border: 1px solid #c79735;
 }
@@ -246,7 +226,7 @@ input {
 }
 
 .card-flip {
-  max-width: 25px;
+  max-width: 50px;
   background-color: #fff;
   border-radius: 50px;
   padding: 20px;
@@ -255,19 +235,27 @@ input {
 }
 
 .card-flip:hover {
-  border: 2px solid #d64226;
+  border: 3px solid #ff8800;
   cursor: pointer;
 }
 
 .card-next {
   position: absolute;
-  bottom: 25px;
-  right: 20px;
-  text-align: center;
-  padding-top: 0px;
+  bottom: 0.5em;
+  right: 1em;
 }
-.card-next img {
+
+.next-alt {
   max-width: 30px;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 20px;
+  border: 2px solid #fff;
+  margin-top: 30px;
+}
+
+.next-alt:hover {
+  border: 3px solid #ff8800;
 }
 
 .card-next a:link,
@@ -279,9 +267,9 @@ input {
   color: #727c85;
 }
 
-/* 404 Error */
+/* /* 404 Error */
 
-.desk {
+/* .desk {
   width: 80%;
   color: #727c85;
   margin: auto;
@@ -317,20 +305,9 @@ input {
   overflow: scroll;
 }
 
-.paper pre {
-  font-size: 1em;
-  line-height: 3.15em;
-  white-space: pre-wrap; /* css-3 */
-  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
-  white-space: -pre-wrap; /* Opera 4-6 */
-  white-space: -o-pre-wrap; /* Opera 7 */
-  word-wrap: break-word; /* Internet Explorer 5.5+ */
-  margin-top: 0;
-}
-
 .tear {
   background-image: url('../img/tear.svg');
   background-repeat: repeat-x;
   width: 100%;
   height: 24px;
-}
+} */
