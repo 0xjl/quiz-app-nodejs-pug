@@ -13,14 +13,14 @@
                 "answer": "40,075KM"
             },
             {
-                "question": "What is a common way to shorten the response object's name inside middleware?",
+                "question": "Who invented the wheel?",
                 "hint": "It has the same abbreviation as \"resolution\"",
-                "answer": "res"
+                "answer": "ancient Mesopotamian people"
             },
             {
                 "question": "WHAT IS THE PURPOSE OF LIFE?",
-                "hint": "Think: binary",
-                "answer": "2"
+                "hint": "Think: positive",
+                "answer": "To make the most out of it"
             }
         ]
     }
